@@ -9,3 +9,23 @@ function vowelCounted(str) {
     }
     return count
 }
+
+//sum of digits of the number
+function sumOfDigits(number) {
+    if(typeof number !== 'number') {
+        return 'invalid answer, type number'
+    }
+    if(number < 0) {
+        number = - number
+    } 
+    if(number === 0) {
+        return number
+    }
+    let digits = 0, sum = 0;
+    while(number > 0) {
+        digits = number % 10;
+        sum += digits;
+        number = Math.floor(number / 10);
+    }
+    return sum
+}
