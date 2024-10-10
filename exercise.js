@@ -29,3 +29,21 @@ function sumOfDigits(number) {
     }
     return sum
 }
+
+//
+function printMatrix(rowCount, colCount) {
+    let result = "";
+    for (let j = 0; j <= rowCount; j++) {
+        let row = '';
+        for (let i = 0; i <= colCount; i++) {
+            if(i === 0 || i === colCount || j === 0 || j === rowCount) {
+            row += " * ";
+         } else {
+                row += "   ";
+         }
+        }
+        result += row;
+        result += '\n'
+    }
+    console.log(result)
+}
