@@ -58,3 +58,14 @@ function strCount(str, count) {
     }
     return result
 }
+
+function number(str) {
+    let result = '';
+    for(let i = 0; i < str.length; i++) {
+        let Nan = +str[i];
+       if(Nan !== NaN) {
+           result += str[i];
+       }
+    }
+    return result
+}
