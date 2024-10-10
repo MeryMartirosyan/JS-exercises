@@ -47,3 +47,14 @@ function printMatrix(rowCount, colCount) {
     }
     console.log(result)
 }
+
+function strCount(str, count) {
+    let result = '';
+    for(let i = 0; i < str.length; i++) {
+        result += '';
+        for(let j = 0; j < count; j++) {
+            result += str[i];
+        }
+    }
+    return result
+}
