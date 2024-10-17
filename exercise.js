@@ -69,3 +69,13 @@ function number(str) {
     }
     return result
 }
+
+// check if str contains in string, if we know that str has 2 index (0 and 1)
+function isContain(string, str) {
+    for(let i = 0; i < string.length; i++) {
+        if(string[i] === str[i] && string[i + 1] === str[i + 1]) {
+            return true
+        }
+    }
+    return false
+}
